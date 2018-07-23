@@ -31,3 +31,11 @@ $ git config --global --unset user.email
 * ` $ git config --list ` OR 
 * ` $ git config -l `     OR
 * ` $ git config user.name ` AND ` $ git config user.email `
+
+
+### How to (re)initialize an empty Git repository:
+` $ git init `
+
+<p style="color: red;">
+NOTE: This command creates an empty and hidden folder called `.git` in your working directory that holds all of gits relevant files.
+</p>
