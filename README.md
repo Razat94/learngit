@@ -68,12 +68,26 @@ The Git workflow consists of:
 > * saving/commiting changes to a Git repository. 
 
 
+### How to adds all of the files from the working directory to the staging area
+` $ git add . `
+
+
 ### How to inspect the contents of the working directory and staging area
 ` $ git status `
 
 
 ### How to show the difference between the working directory and the staging area
 ` $ git diff `
+
+
+### How to permanently store the file changes from the staging area in the repository
+` $ git commit -m "message" `
+
+
+### …or push an existing Git repository from the command line to a Github repo
+> Run this command initially if you're pushing to a new Github repo 
+> ` $ git remote add origin https://github.com/Razat94/gold.git `
+` $ git push -u origin master `
 
 
 ### How to show a log of all previous commits:
