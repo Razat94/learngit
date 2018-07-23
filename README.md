@@ -13,6 +13,10 @@
 
 
 
+### How to display help information about Git
+' $ git --help '
+
+
 ### How to sign in/set Github Account in Git Bash console:
 ```
 $ git config --global user.name "John Doe"
@@ -38,7 +42,7 @@ $ git config --global --unset user.email
 
 ```diff
 
-- NOTE: This command creates an empty and hidden folder named `.git` in your working directory.
+- NOTE: This command creates a hidden folder named `.git` in your working directory.
 
 ```
 
@@ -49,5 +53,33 @@ $ git config --global --unset user.email
 ```diff
 
 - NOTE: As an alternative, you can just manually delete the folder `.git` from the file directory.
+
+```
+
+
+### To inspect the contents of the working directory and staging area
+` $ git status `
+
+
+### To show the difference between the working directory and the staging area
+` $ git diff `
+
+
+### To show a log of all previous commits:
+` $ git log `
+
+```diff
+
+- NOTE: 
+
+In the output, notice:
+
+A 40-character code, called a SHA, that uniquely identifies the commit. This appears in orange text.
+The commit author (you!)
+The date and time of the commit
+The commit message
+
+If for whatever reason you're stuck on the page, 
+You may need to press 'q' on your keyboard to restore the terminal.
 
 ```
