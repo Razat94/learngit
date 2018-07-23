@@ -15,8 +15,8 @@
 
 ### How to sign in/set Github Account in Git Bash console:
 
-'$ git config --global user.name username`
-'$ git config --global user.email "johndoe@example.com" `
+` $ git config --global user.name "John Doe" `
+` $ git config --global user.email "johndoe@example.com" `
 
 
 ### How to sign out/unset Github Account in Git Bash console:
