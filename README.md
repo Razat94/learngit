@@ -86,7 +86,7 @@ The Git workflow consists of:
 
 ### …or push an existing Git repository from the command line to a Github repo
 > Run this command initially if you're pushing to a new Github repo 
-> ` $ git remote add origin https://github.com/Razat94/gold.git `
+> <br> ` $ git remote add origin [Github Repo URL].git `
 
 ` $ git push -u origin master `
 
