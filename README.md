@@ -8,13 +8,14 @@
 * [Interesting blog post that explains Git/Github in plain english](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english)
 * [Interesting blog post on how to write a git commit message](https://chris.beams.io/posts/git-commit/)
 * [Similar Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+> This directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation of all the popular commands.
 
 ## <p align="center"> Basic Git Commands
 
 
 
 ### How to display help information about Git
-' $ git --help '
+` $ git help `
 
 
 ### How to sign in/set Github Account in Git Bash console:
@@ -79,7 +80,6 @@ The commit author (you!)
 The date and time of the commit
 The commit message
 
-If for whatever reason you're stuck on the page, 
-You may need to press 'q' on your keyboard to restore the terminal.
+After running this command, if you're stuck on the page, you may need to press 'q' on your keyboard to restore the terminal.
 
 ```
