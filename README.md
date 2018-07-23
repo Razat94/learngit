@@ -38,6 +38,16 @@ $ git config --global --unset user.email
 
 ```diff
 
-- NOTE: This command creates an empty and hidden folder called `.git` in your working directory.
+- NOTE: This command creates an empty and hidden folder named `.git` in your working directory.
+
+```
+
+
+### How to completely delete a git repository:
+` $ rm -rf .git `
+
+```diff
+
+- NOTE: As an alternative, you can just manually delete the folder `.git` from the file directory.
 
 ```
