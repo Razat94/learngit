@@ -38,6 +38,6 @@ $ git config --global --unset user.email
 
 ```diff
 
-- NOTE: This command creates an empty and hidden folder called `.git` in your working directory that holds all of gits relevant files.
+- NOTE: This command creates an empty and hidden folder called `.git` in your working directory.
 
 ```
