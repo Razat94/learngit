@@ -9,7 +9,7 @@
 * [Interesting blog post on how to write a git commit message](https://chris.beams.io/posts/git-commit/)
 * [Similar Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 
-## Basic Git Commands ``
+## <p align="center"> Basic Git Commands
 
 
 
@@ -30,5 +30,5 @@ $ git config --global --unset user.email
 
 ### Confirm that the user.name & user.email keys are cleared from your configuration settings: 
 * ` $ git config --list ` OR 
-* ` $git config -l '      OR
+* ` $git config -l `      OR
 * ` $git config user.name ` AND ` $git config user.email `
