@@ -8,7 +8,7 @@
 * [Interesting blog post that explains Git/Github in plain english](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english)
 * [Interesting blog post on how to write a git commit message](https://chris.beams.io/posts/git-commit/)
 * [Similar Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
-> This directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation for all of the popular commands.
+> The directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation for all of the popular commands.
 
 ## <p align="center"> Basic Git Commands
 
@@ -42,9 +42,7 @@ $ git config --global --unset user.email
 ` $ git init `
 
 ```diff
-
 - NOTE: This command creates a hidden folder named `.git` in your working directory.
-
 ```
 
 
@@ -52,36 +50,29 @@ $ git config --global --unset user.email
 ` $ rm -rf .git `
 
 ```diff
-
 - NOTE: As an alternative, you can just manually delete the folder `.git` from the file directory.
-
 ```
 
 
-### To inspect the contents of the working directory and staging area
+### How to inspect the contents of the working directory and staging area
 ` $ git status `
 
 
-### To show the difference between the working directory and the staging area
+### How to show the difference between the working directory and the staging area
 ` $ git diff `
 
 
-### To show a log of all previous commits:
+### How to show a log of all previous commits:
 ` $ git log `
 
 ```diff
-
 - NOTE: 
-
 In the output, notice:
 
-A 40-character code, called a SHA, that uniquely identifies the commit. This appears in orange text.
-The commit author (you!)
+A 40-character code, called a SHA, that uniquely identifies the commit.
+The commit author
 The date and time of the commit
 The commit message
 ```
 
 > After running this command, if you're stuck on the page, you may need to press 'q' on your keyboard to restore the terminal.
-
-
-
