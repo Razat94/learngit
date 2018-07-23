@@ -1,10 +1,30 @@
-# <p align="center" vertical-align= "middle"> Git Cheat Sheet
-<p>A personal cheat sheet that covers basic Git commands and information for reference.
+# <p align="center"> Git Cheat Sheet
+  <p align="center"> A personal cheat sheet that covers basic Git commands and information for reference.
 
 ## Helpful Resources/Related Links:
 * [Codeacademy's Learn Git Course](https://www.codecademy.com/learn/learn-git)
 * [ProGit eBook](https://git-scm.com/book/en/v2)
 * [Atlassian's Tutorial on Git](https://www.atlassian.com/git/tutorials)
 * [Interesting blog post that explains Git/Github in plain english](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english)
-* [Interesting blog post on how to write a git commit Message](https://chris.beams.io/posts/git-commit/)
+* [Interesting blog post on how to write a git commit message](https://chris.beams.io/posts/git-commit/)
 * [Similar Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+
+## Basic Git Commands ``
+
+
+
+### How to sign in/set Github Account in Git Bash console:
+
+' $ git config --global user.name "John Doe" `
+' $ git config --global user.email "johndoe@example.com" `
+
+
+### How to sign out/unset Github Account in Git Bash console:
+
+' $ git config --global --unset user.name '
+' $ git config --global --unset user.email '
+
+
+### Confirm that the user.name & user.email keys are cleared from your configuration settings: 
+' $ git config --list ' OR ' $git config -l ' OR ' $git config user.name ' AND ' $git config user.email '
+ 
