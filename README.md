@@ -159,8 +159,9 @@ In the output, notice:
 > After running this command, if you're stuck on the page, you may need to press 'q' on your keyboard to restore the terminal.
 
 
-### How to list total commits by author (sorted by commit count):
-` $ git shortlog -sn `
+### How to show commit details by 7-digit-SHA
+` $ git show 7-digit-SHA `
+> To see some abbreviated stats for each commit: ` $ git show 7-digit-SHA --stat ` 
 
 
 ### How to show the content of a particular file from a specific commit:
@@ -185,3 +186,7 @@ In the output, notice:
 
 ### To rename a file in Git:
 ` $ git mv [file_from] [file_to] ` 
+
+
+### How to list total commits by author (sorted by commit count):
+` $ git shortlog -sn `
