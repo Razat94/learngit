@@ -169,6 +169,11 @@ In the output, notice:
 [Source](https://stackoverflow.com/questions/424071/how-to-list-all-the-files-in-a-commit)
 
 
+### How to show only lines that have been modified between two commits:
+` $ git diff -U0 SHA1 SHA2 `
+[Source](https://stackoverflow.com/questions/18810623/git-diff-to-show-only-lines-that-have-been-modified)
+
+
 ### How to show only the file names that changed between two commits:
 ` $ git diff --name-only SHA1 SHA2 `
 [Source](https://stackoverflow.com/questions/1552340/how-to-list-only-the-file-names-that-changed-between-two-commits)
