@@ -1,5 +1,6 @@
-# <p align="center"> Git Cheat Sheet
-  <p align="center"> A personal cheat sheet that covers basic Git commands and information for reference.
+# <p align="center"> Git Cheat Sheet </p>
+  <p align="center"> A personal cheat sheet that covers basic Git commands and information for reference. </p>
+
 
 ## Helpful Resources/Related Links:
 * [Codeacademy's Learn Git Course](https://www.codecademy.com/learn/learn-git)
@@ -11,8 +12,13 @@
 * [Another Git Cheatsheet](https://orga.cat/posts/most-useful-git-commands)
 > The directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation for all of the popular commands.
 
-## <p align="center"> Basic Git Commands
 
+## Table of Contents
+1. <a href="#config>   Configuration </a>
+2. <a href="#basicGit> Basic Git commands </a>
+
+
+## <p align="center" id = "config"> Configuration </p>
 
 
 ### How to display help information about Git
@@ -71,20 +77,9 @@ fatal: unable to auto-detect email address (got 'Razat@DESKTOP-UK2NEC1.(none)')
 * ` $ git config user.name ` AND ` $ git config user.email `
 
 
-### How to (re)initialize an empty Git repository:
-` $ git init `
-
-```diff
-- NOTE: This command creates a hidden folder named `.git` in your working directory.
-```
 
 
-### How to completely delete a git repository:
-` $ rm -rf .git `
-
-```diff
-- NOTE: As an alternative, you can just manually delete the folder `.git` from the file directory.
-```
+## <p align="center" id = "basicGit"> Basic Git Commands </p>
 
 
 <img src = "images/learngit.PNG">
@@ -99,6 +94,22 @@ The Git workflow consists of:
 > * editing files in the working directory
 > * adding files to the staging area
 > * saving/commiting changes to a Git repository. 
+
+
+### How to (re)initialize an empty Git repository:
+` $ git init `
+
+```diff
+- NOTE: This command creates a hidden folder named `.git` in your working directory.
+```
+
+
+### How to completely delete a git repository:
+` $ rm -rf .git `
+
+```diff
+- NOTE: As an alternative, you can just manually delete the folder `.git` from the file directory.
+```
 
 
 ### How to adds all of the files from the working directory to the staging area
