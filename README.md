@@ -95,7 +95,6 @@ The Git workflow consists of:
 > * adding files to the staging area
 > * saving/commiting changes to a Git repository. 
 
-
 ### How to (re)initialize an empty Git repository:
 ` $ git init `
 
@@ -135,6 +134,10 @@ The Git workflow consists of:
 ` $ git push -u origin master `
 
 
+> In Git, the commit you are currently on is known as the HEAD commit. 
+> In many cases, the most recently made commit is the HEAD commit.
+
+
 ### How to show a log of all previous commits:
 ` $ git log `
 
@@ -171,6 +174,8 @@ In the output, notice:
 ### How to show commit details by SHA
 ` $ git show SHA `
 > To see some abbreviated stats for each commit: ` $ git show SHA --stat ` 
+
+> To see the HEAD commit, enter: git show HEAD
 
 
 ### How to show the content of a particular file from a specific commit:
