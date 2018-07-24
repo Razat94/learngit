@@ -143,6 +143,7 @@ The Git workflow consists of:
 In the output, notice:
 
 * A 40-character code, called a SHA, that uniquely identifies the commit.
+> From now on, whenever I say 'SHA', I will refer to the first 7 digits of this number.
 * The commit author
 * The date and time of the commit
 * The commit message
@@ -159,14 +160,18 @@ In the output, notice:
 > After running this command, if you're stuck on the page, you may need to press 'q' on your keyboard to restore the terminal.
 
 
-### How to show commit details by 7-digit-SHA
-` $ git show 7-digit-SHA `
-> To see some abbreviated stats for each commit: ` $ git show 7-digit-SHA --stat ` 
+### How to show commit details by SHA
+` $ git show SHA `
+> To see some abbreviated stats for each commit: ` $ git show SHA --stat ` 
 
 
 ### How to show the content of a particular file from a specific commit:
-` $ git show 7-digit-SHA:[filename.fileextension] `
+` $ git show SHA:[filename.fileextension] `
 [Source](https://stackoverflow.com/questions/424071/how-to-list-all-the-files-in-a-commit)
+
+
+### To see a list of modified files, how many files were changed, and how many lines in those files were added and removed. 
+` $ git diff SHA1 SHA2 --stat `
 
 
 ### How to show only lines that have been modified between two commits:
@@ -181,7 +186,7 @@ In the output, notice:
 
 
 ### How to see list of all files in a commit:
-` $ git diff-tree --no-commit-id --name-only -r 7-digit-SHA `
+` $ git diff-tree --no-commit-id --name-only -r SHA `
 
 
 ### To remove a file in Git:
