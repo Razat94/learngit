@@ -136,7 +136,8 @@ In the output, notice:
 * The commit message
 ```
 
-> After running this command, if you're stuck on the page, you may need to press 'q' on your keyboard to restore the terminal.
-
 > How to show a log of each previous commit printed on individual lines 
 ` $ git log --pretty=oneline `
+
+> When you run this command, you will need to press the "Enter" key to see one previous commit, or the "Space" key to see a bunch of the previous commits. 
+> After running this command, if you're stuck on the page, you may need to press 'q' on your keyboard to restore the terminal.
