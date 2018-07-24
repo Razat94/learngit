@@ -139,6 +139,22 @@ In the output, notice:
 > To show a log of each previous commit printed on individual lines, use:
 > ` $ git log --pretty=oneline `
 
-> When you run this command, you will need to press the "Enter" key to see one previous commit, or the "Space" key to see a bunch of the previous commits. 
+> To show the log of the last commit:
+> ` $ git log -1 `
+
+> When you run this command, you will need to press the "Enter" key to see one previous commit, or the "Space" key to see a bunch of previous commits. 
 
 > After running this command, if you're stuck on the page, you may need to press 'q' on your keyboard to restore the terminal.
+
+
+### How to list total commits by author (sorted by commit count):
+` $ git shortlog -sn `
+
+
+### How to see the content of a particular file from a specific commit:
+` $ git show 7-digit-SHA:[filename.fileextension] `
+[Source](https://stackoverflow.com/questions/424071/how-to-list-all-the-files-in-a-commit)
+
+
+### How to see list of all files in a commit:
+` $ git diff-tree --no-commit-id --name-only -r 7-digit-SHA `
