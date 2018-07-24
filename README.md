@@ -42,7 +42,7 @@ In doing so, yes, it is impossible to push a commit without signing into an acco
 
 <strong> However </strong> I noticed that this method fails in a certain regard.
 Suppose I want to push a commit from an account that is different from the account's default identity. Using the above method will not work because 
-[commits in Git is associated with the <user.email</em> key.](https://help.github.com/articles/setting-your-commit-email-address-in-git/)
+[commits in Git is associated with the user.email key.](https://help.github.com/articles/setting-your-commit-email-address-in-git/)
 In doing so, I would've made a commit from an account that is associated with the value of the <em>user.email</em> key, 
 and not from the account that I typed into this alert window:
 
