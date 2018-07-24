@@ -46,7 +46,7 @@ Using the above method will not work because commits in Git is associated with t
 In doing so, I would've made a commit from an account that is associated with the value of the <em>user.email</em> key, 
 and not from the account that I typed in here:
 
-<img align="center" src = "images/login.PNG">
+<img src = "images/login.PNG" align = "middle">
 
 Better yet, if I unset the <em>user.name</em> and <em>user.email</em> keys, I recieve this message:
 ```
