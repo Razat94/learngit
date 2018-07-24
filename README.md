@@ -151,9 +151,15 @@ In the output, notice:
 ` $ git shortlog -sn `
 
 
-### How to see the content of a particular file from a specific commit:
+### How to show the content of a particular file from a specific commit:
 ` $ git show 7-digit-SHA:[filename.fileextension] `
 [Source](https://stackoverflow.com/questions/424071/how-to-list-all-the-files-in-a-commit)
+
+
+### How to show only the file names that changed between two commits:
+` $ git diff --name-only SHA1 SHA2 `
+[Source](https://stackoverflow.com/questions/1552340/how-to-list-only-the-file-names-that-changed-between-two-commits)
+> ` $ git show --name-only SHA1 ` works as well
 
 
 ### How to see list of all files in a commit:
