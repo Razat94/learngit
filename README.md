@@ -21,7 +21,6 @@
 
 
 <br></br>
-
 ## <p align="center" id = "config"> Configuration </p>
 
 
