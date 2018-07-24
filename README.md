@@ -14,7 +14,7 @@
 
 
 ## Table of Contents
-1. <a href="#config>   Configuration </a>
+1. [Configuration](#config)
 2. <a href="#basicGit> Basic Git commands </a>
 
 
