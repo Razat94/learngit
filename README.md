@@ -31,6 +31,12 @@ $ git config --global --unset user.name
 $ git config --global --unset user.email
 ```
 
+> The top answer of [this stackoverflow question](https://stackoverflow.com/questions/38549834/how-to-sign-out-in-git-bash-console-in-windows/38553149#38553149)
+> states that in order to properly sign out and be asked again for username/password when commiting to a project, this needs to be done:
+> <br> Go to: Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> Under Generic Credentials,
+> you fill find some credentials related to Github. Click on them and click "Remove". 
+
+ 
 
 ### How to confirm that user.name & user.email keys either have values or are empty from configuration settings: 
 * ` $ git config --list ` OR 
