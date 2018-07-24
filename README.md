@@ -56,7 +56,7 @@ to set your account's default identity.
 Omit --global to set the identity only in this repository.
 
 fatal: unable to auto-detect email address (got 'Razat@DESKTOP-UK2NEC1.(none)')
-``
+```
 
 
 ### How to confirm that user.name & user.email keys either have values or are empty from configuration settings: 
@@ -81,7 +81,7 @@ fatal: unable to auto-detect email address (got 'Razat@DESKTOP-UK2NEC1.(none)')
 ```
 
 
-<img src = "learngit.PNG">
+<img src = "images/learngit.PNG">
 
 A Git project can be thought of as having three parts:
 
