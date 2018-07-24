@@ -185,7 +185,7 @@ In the output, notice:
 ### How to show only lines that have been modified between two commits:
 ` $ git diff -U0 SHA1 SHA2 `
 [Source](https://stackoverflow.com/questions/18810623/git-diff-to-show-only-lines-that-have-been-modified)
-> This also works: ` $ git diff --unified=0 `
+> This also works: ` $ git diff --unified=0 SHA1 SHA2 `
 
 
 ### How to show only the file names that changed between two commits:
