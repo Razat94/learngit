@@ -48,7 +48,7 @@ and not from the account that I typed into this alert window:
 
 <div align = "center"> <img src = "images/login.PNG"> </div>
 
-Better yet, if I unset the <em>user.name</em> and <em>user.email</em> keys, I recieve this message:
+Better yet, if I unset the <em>user.name</em> and <em>user.email</em> keys, I recieve this message when I attempt to make a commit:
 ```
 *** Please tell me who you are.
 
