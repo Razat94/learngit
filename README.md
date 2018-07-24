@@ -15,7 +15,7 @@
 
 ## Table of Contents
 1. [Configuration](#config)
-2. <a href="#basicGit> Basic Git commands </a>
+2. [Basic Git commands](#basicGit)
 
 
 ## <p align="center" id = "config"> Configuration </p>
