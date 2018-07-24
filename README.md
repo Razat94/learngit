@@ -160,6 +160,14 @@ In the output, notice:
 > After running this command, if you're stuck on the page, you may need to press 'q' on your keyboard to restore the terminal.
 
 
+### Show list of modifiled files, how many files were changed, and how many lines in those files were added and removed in last two commits: 
+` $ git log -2 --stat `
+
+
+### To only lines that have been modified between last two commits:
+` $ git log -2 -U0 `
+
+
 ### How to show commit details by SHA
 ` $ git show SHA `
 > To see some abbreviated stats for each commit: ` $ git show SHA --stat ` 
