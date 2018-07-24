@@ -159,7 +159,7 @@ In the output, notice:
 ### How to show only the file names that changed between two commits:
 ` $ git diff --name-only SHA1 SHA2 `
 [Source](https://stackoverflow.com/questions/1552340/how-to-list-only-the-file-names-that-changed-between-two-commits)
-> This works too: ` $ git show --name-only SHA1 ` 
+> This works too: ` $ git show --name-status SHA1 ` 
 
 
 ### How to see list of all files in a commit:
