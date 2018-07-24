@@ -8,6 +8,7 @@
 * [Interesting blog post that explains Git/Github in plain english](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english)
 * [Interesting blog post on how to write a git commit message](https://chris.beams.io/posts/git-commit/)
 * [Similar Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+* [Another Git Cheatsheet](https://orga.cat/posts/most-useful-git-commands)
 > The directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation for all of the popular commands.
 
 ## <p align="center"> Basic Git Commands
@@ -164,3 +165,12 @@ In the output, notice:
 
 ### How to see list of all files in a commit:
 ` $ git diff-tree --no-commit-id --name-only -r 7-digit-SHA `
+
+
+### To remove a file in Git:
+` $ git remove [file] ` 
+> Remember, we need to use this command to remove files from both the staging area and the working directory.
+
+
+### To rename a file in Git:
+` $ git mv [file_from] [file_to] ` 
