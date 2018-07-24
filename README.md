@@ -78,10 +78,7 @@ fatal: unable to auto-detect email address (got 'Razat@DESKTOP-UK2NEC1.(none)')
 * ` $ git config user.name ` AND ` $ git config user.email `
 
 
-
-
-
-
+<br></br>
 ## <p align="center" id = "basicGit"> Basic Git Commands </p>
 
 
