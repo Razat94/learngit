@@ -16,10 +16,6 @@
 ## Table of Contents
 1. [Configuration](#config)
 2. [Basic Git commands](#basicGit)
-
-
-
-
 <br></br>
 ## <p align="center" id = "config"> Configuration </p>
 
