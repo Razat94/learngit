@@ -31,19 +31,19 @@ $ git config --global --unset user.name
 $ git config --global --unset user.email
 ```
 
-> The top answer of [this stackoverflow question](https://stackoverflow.com/questions/38549834/how-to-sign-out-in-git-bash-console-in-windows/38553149#38553149)
-> states that in order to properly sign out and be asked again for username/password when commiting to a project, this needs to be done:
-> <br> <br> Go to: Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> Generic Credentials
-> <br> There, you fill find some credentials related to Github. Click on them and then click "Remove". 
-> <br> <br> I found that this method simply deletes a personal access token from your github account. 
-> In doing so, yes, it is impossible to push a commit without signing into an account first.
+The top answer of [this stackoverflow question](https://stackoverflow.com/questions/38549834/how-to-sign-out-in-git-bash-console-in-windows/38553149#38553149)
+states that in order to properly sign out and be asked again for username/password when commiting to a project, this needs to be done:
+<br> <br> Go to: Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> Generic Credentials
+<br> There, you fill find some credentials related to Github. Click on them and then click "Remove". 
+<br> <br> I found that this method simply deletes a personal access token from your github account. 
+In doing so, yes, it is impossible to push a commit without signing into an account first.
 
-> <strong> However </strong> I noticed that this method fails in a certain regard.
-> Suppose I want to push a commit from an account that is different from the account's default identity. 
-> Using the above method will not work because commits in Git is associated with the <em>user.email</em> key.  
-> In doing so, I would've made a commit from an account that is associated with the previous email address. 
+<strong> However </strong> I noticed that this method fails in a certain regard.
+Suppose I want to push a commit from an account that is different from the account's default identity. 
+Using the above method will not work because commits in Git is associated with the <em>user.email</em> key.  
+In doing so, I would've made a commit from an account that is associated with the previous email address. 
 
-> Better yet, if I unset the <em>user.name</em> and <em>user.email</em> keys, I recieve this message:
+Better yet, if I unset the <em>user.name</em> and <em>user.email</em> keys, I recieve this message:
 ```
 *** Please tell me who you are.
 
