@@ -151,8 +151,8 @@ In the output, notice:
 > To show a log of each previous commit printed on individual lines, use:
 > ` $ git log --pretty=oneline `
 
-> To show the log of the last commit:
-> ` $ git log -1 `
+> To show the log of the last two commits:
+> ` $ git log -2 `
 
 > When you run this command, you will need to press the "Enter" key to see one previous commit, or the "Space" key to see a bunch of previous commits. 
 
