@@ -261,5 +261,7 @@ $ git add forgotten_file
 $ git commit --amend
 ```
 
+By doing this, you will only end up with one commit, where the new changes will be amended to the previous commit.
+
 > To just change the message of the last commit: 
 > ` $ git commit --amend -m "New commit message" `
