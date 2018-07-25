@@ -237,7 +237,7 @@ In the output, notice:
 
 
 ### Viewing an old commit | [Source](https://www.atlassian.com/git/tutorials/undoing-changes)
-> Let’s say your project history looks something like the following:
+Let’s say your project history looks something like the following:
 
 ```diff
 $ git log --oneline
