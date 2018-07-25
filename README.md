@@ -20,7 +20,7 @@
 
 
 <br></br>
-## <p align="center" id = "config"> Configuration [Back to ToC](#toc) </p>
+## <p align="center" id = "config"> Configuration | [Back to ToC](#toc) </p>
 
 
 
