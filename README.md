@@ -13,14 +13,14 @@
 > The directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation for all of the popular commands.
 
 
-## Table of Contents
+## <p id = "ToC"> Table of Contents </p>
 1. [Configuration](#config)
 2. [Basic Git commands](#basicGit)
 3. [Undoing Changes](#undo)
 
 
 <br></br>
-## <p align="center" id = "config"> Configuration </p>
+## <p align="center" id = "config"> Configuration </p> [(ToC)]{#ToC}
 
 
 ### How to display help information about Git
@@ -205,7 +205,7 @@ In the output, notice:
 
 
 ### To remove a file in Git:
-` $ git remove [file] ` 
+` $ git rm [file] ` 
 > Remember, we need to use this command to remove files from both the staging area and the working directory.
 
 
