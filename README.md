@@ -2,7 +2,7 @@
   <p align="center"> A personal cheat sheet that covers basic Git commands and information for reference. </p>
 
 
-## Helpful Resources/Related Links:
+## Resources/Related Links:
 * [Codeacademy's Learn Git Course](https://www.codecademy.com/learn/learn-git)
 * [ProGit eBook](https://git-scm.com/book/en/v2)
 * [Atlassian's Tutorial on Git](https://www.atlassian.com/git/tutorials)
@@ -251,9 +251,9 @@ In the output, notice:
 ### How to amend (make additional changes) to the most recent commit: 
 ` $ git commit --amend `
 
-> As an example, 
-> if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, 
-> you can do something like this:
+As an example, 
+if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, 
+you can do something like this:
 
 ```diff
 $ git commit -m 'initial commit'
