@@ -237,7 +237,7 @@ In the output, notice:
 
 
 ### Viewing an old commit | [Source](https://www.atlassian.com/git/tutorials/undoing-changes)
-Let’s say your project history looks something like the following:
+> Let’s say your project history looks something like the following:
 
 ```diff
 $ git log --oneline
@@ -249,13 +249,13 @@ a1e8fb5 Make some important changes to hello.txt
 9773e52 Initial import
 ```
 
-You can use <em>git checkout</em> to view the "Make some import changes to hello.txt" commit as follows:
+> You can use <em>git checkout</em> to view the "Make some import changes to hello.txt" commit as follows:
 ` $ git checkout a1e8fb5 `
 
-This makes your working directory match the exact state of the <strong>a1e8fb5</strong> commit. 
-You can look at files, compile the project, run tests, and even edit files without worrying about losing the current state of the project. 
-Nothing you do in here will be saved in your repository. 
-To continue developing, you need to get back to the "current" state of your project:
+> This makes your working directory match the exact state of the <strong>a1e8fb5</strong> commit. 
+> You can look at files, compile the project, run tests, and even edit files without worrying about losing the current state of the project. 
+> Nothing you do in here will be saved in your repository. 
+> To continue developing, you need to get back to the "current" state of your project:
 ` $ git checkout master `
 
 
