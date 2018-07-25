@@ -255,8 +255,8 @@ In the output, notice:
 > if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, 
 > you can do something like this:
 
-> ```diff
-> $ git commit -m 'initial commit'
-> $ git add forgotten_file
-> $ git commit --amend
-> ```
+```diff
+$ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend
+```
