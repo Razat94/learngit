@@ -20,7 +20,7 @@
 
 
 <br></br>
-## <p align="center" id = "config"> Configuration </p> [(ToC)]{#ToC}
+## <p align="center" id = "config"> Configuration </p> [ToC]{#ToC}
 
 
 ### How to display help information about Git
