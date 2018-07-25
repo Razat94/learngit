@@ -16,6 +16,7 @@
 ## Table of Contents
 1. [Configuration](#config)
 2. [Basic Git commands](#basicGit)
+3. [Undoing Changes](#undo)
 
 
 <br></br>
@@ -95,6 +96,10 @@ The Git workflow consists of:
 > * adding files to the staging area
 > * saving/commiting changes to a Git repository. 
 
+> In Git, the commit you are currently on is known as the HEAD commit. 
+> In many cases, the last, most recently made commit is the HEAD commit.
+
+
 ### How to (re)initialize an empty Git repository:
 ` $ git init `
 
@@ -132,10 +137,6 @@ The Git workflow consists of:
 > <br> ` $ git remote add origin [Github Repo URL].git `
 
 ` $ git push -u origin master `
-
-
-> In Git, the commit you are currently on is known as the HEAD commit. 
-> In many cases, the most recently made commit is the HEAD commit.
 
 
 ### How to show a log of all previous commits:
@@ -214,3 +215,19 @@ In the output, notice:
 
 ### How to list total commits by author (sorted by commit count):
 ` $ git shortlog -sn `
+
+
+<br></br>
+## <p align="center" id = "undo"> Undoing Changes </p>
+
+
+### How to reset the file in the WORKING DIRECTORY to the HEAD commit:
+` $ git checkout HEAD filename `
+
+
+### How to reset the file in the STAGING AREA to be the same as the HEAD commit.
+` $ git reset HEAD filename `
+
+
+### How to resets HEAD to a previous commit in your commit history:
+` git reset SHA `
