@@ -11,7 +11,7 @@
 * [Similar Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 * [Another Git Cheatsheet](https://orga.cat/posts/most-useful-git-commands)
 > The directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation for all of the popular commands.
-[Table of Contentents]{#ToC}
+
 
 ## <p id = "ToC"> Table of Contents </p>
 1. [Configuration](#config)
@@ -21,7 +21,7 @@
 
 <br></br>
 ## <p align="center" id = "config"> Configuration </p> 
-[Table of Contentents]{#ToC}
+[Undoing Changes](#undo)
 
 
 ### How to display help information about Git
