@@ -246,3 +246,17 @@ In the output, notice:
 
 ### How to resets HEAD to a previous commit in your commit history:
 ` git reset SHA `
+
+
+### How to amend (make additional changes) to the most recent commit: 
+` $ git commit --amend `
+
+> As an example, 
+> if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, 
+> you can do something like this:
+
+> ```diff
+> $ git commit -m 'initial commit'
+> $ git add forgotten_file
+> $ git commit --amend
+> ```
