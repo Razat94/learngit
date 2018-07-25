@@ -159,9 +159,7 @@ In the output, notice:
 ```
 
 > To show a log of each previous commit printed on individual lines, use:
-> ` $ git log --oneline ` OR use
-
-> ` $ git log --pretty=oneline ` if you want to see the full SHA number.
+> ` $ git log --oneline ` OR use: <br></br> ` $ git log --pretty=oneline ` if you want to see the full SHA number.
 
 > To show the log of the last two commits:
 > ` $ git log -2 `
