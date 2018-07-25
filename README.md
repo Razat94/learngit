@@ -236,6 +236,29 @@ In the output, notice:
 ## <p align="center" id = "undo"> Undoing Changes | [Back to ToC](#toc) </p>
 
 
+### Viewing an old commit | [Source](https://www.atlassian.com/git/tutorials/undoing-changes)
+Let’s say your project history looks something like the following:
+
+```diff
+$ git log --oneline
+
+b7119f2 Continue doing crazy things
+872fa7e Try something crazy
+a1e8fb5 Make some important changes to hello.txt
+435b61d Create hello.txt
+9773e52 Initial import
+```
+
+You can use <em>git checkout</em> to view the "Make some import changes to hello.txt" commit as follows:
+` $ git checkout a1e8fb5 `
+
+This makes your working directory match the exact state of the <strong>a1e8fb5</strong> commit. 
+You can look at files, compile the project, run tests, and even edit files without worrying about losing the current state of the project. 
+Nothing you do in here will be saved in your repository. 
+To continue developing, you need to get back to the "current" state of your project:
+` $ git checkout master `
+
+
 ### How to reset the file in the WORKING DIRECTORY to the HEAD commit:
 ` $ git checkout HEAD filename `
 
