@@ -96,10 +96,9 @@ The Git workflow consists of:
 > * adding files to the staging area
 > * saving/commiting changes to a Git repository. 
 
-> Staged files are files that are listed in the Staging Area. 
-> Unstaged files are files that aren't staged yet i.e. files that are in working directory but not in the staging area.
-
-> Tracked/Untracked files is a different way of saying that the files are Staged/Unstaged.
+It is important to note that Staged files are files that are listed in the Staging Area. 
+Unstaged files are files that aren't staged yet i.e. files that are in working directory but not in the staging area.
+It is also important to note that Tracked/Untracked files is synonymous to Staged/Unstaged files.
 
 > In Git, the commit you are currently on is known as the HEAD commit. 
 > In many cases, the last, most recently made commit is the HEAD commit.
