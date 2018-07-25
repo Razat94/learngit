@@ -165,6 +165,9 @@ In the output, notice:
 > To show the log of the last two commits:
 > ` $ git log -2 `
 
+> To only display commits of a particular file:
+> ` $ git log [file] `
+
 > When you run this command, you will need to press the "Enter" key to see one previous commit, or the "Space" key to see a bunch of previous commits. 
 
 > After running this command, if you're stuck on the page, you may need to press 'q' on your keyboard to restore the terminal.
