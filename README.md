@@ -21,7 +21,7 @@
 
 <br></br>
 ## <p align="center" id = "config"> Configuration </p> 
-[Undoing Changes](#toc)
+[Back to ToC](#toc)
 
 
 ### How to display help information about Git
