@@ -13,7 +13,7 @@
 > The directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation for all of the popular commands.
 
 
-## <p id = "ToC"> Table of Contents </p>
+## <p id = "toc"> Table of Contents </p>
 1. [Configuration](#config)
 2. [Basic Git commands](#basicGit)
 3. [Undoing Changes](#undo)
@@ -21,7 +21,7 @@
 
 <br></br>
 ## <p align="center" id = "config"> Configuration </p> 
-[Undoing Changes](#undo)
+[Undoing Changes](#toc)
 
 
 ### How to display help information about Git
