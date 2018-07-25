@@ -96,6 +96,11 @@ The Git workflow consists of:
 > * adding files to the staging area
 > * saving/commiting changes to a Git repository. 
 
+> Staged files are files that are listed in the Staging Area. 
+> Unstaged files are files that aren't staged yet i.e. files that are in working directory but not in the staging area.
+
+> Tracked/Untracked files is a different way of saying that the files are Staged/Unstaged.
+
 > In Git, the commit you are currently on is known as the HEAD commit. 
 > In many cases, the last, most recently made commit is the HEAD commit.
 
@@ -204,9 +209,16 @@ In the output, notice:
 ` $ git diff-tree --no-commit-id --name-only -r SHA `
 
 
+### How to see a list of files under git version control
+` $ git ls-files `
+
+
 ### To remove a file in Git:
 ` $ git rm [file] ` 
-> Remember, we need to use this command to remove files from both the staging area and the working directory.
+> Remember: use this command to remove files from both the staging area and the working directory.
+
+> In order to remove a file with this command, it must first be under git version control. 
+> Files that have not been added yet (Untracked files) or are ignored (using .gitignore or .git/info/exclude files) will nnot be added.
 
 
 ### To rename a file in Git:
