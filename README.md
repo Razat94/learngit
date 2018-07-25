@@ -260,3 +260,6 @@ $ git commit -m 'initial commit'
 $ git add forgotten_file
 $ git commit --amend
 ```
+
+> To just change the message of the last commit: 
+> ` $ git commit --amend -m "New commit message" `
