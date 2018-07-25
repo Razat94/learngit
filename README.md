@@ -23,7 +23,6 @@
 ## <p align="center" id = "config"> Configuration | [Back to ToC](#toc) </p>
 
 
-
 ### How to display help information about Git
 ` $ git help `
 
@@ -81,7 +80,7 @@ fatal: unable to auto-detect email address (got 'Razat@DESKTOP-UK2NEC1.(none)')
 
 
 <br></br>
-## <p align="center" id = "basicGit"> Basic Git Commands </p>
+## <p align="center" id = "basicGit"> Basic Git Commands | [Back to ToC](#toc) </p>
 
 
 <img src = "images/learngit.PNG">
@@ -219,7 +218,7 @@ In the output, notice:
 
 
 <br></br>
-## <p align="center" id = "undo"> Undoing Changes </p>
+## <p align="center" id = "undo"> Undoing Changes | [Back to ToC](#toc) </p>
 
 
 ### How to reset the file in the WORKING DIRECTORY to the HEAD commit:
