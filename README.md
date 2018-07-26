@@ -142,10 +142,10 @@ It is also important to note that Tracked/Untracked files is synonymous to Stage
 
 ` $ git push -u origin master `
 
-> Run the command 
-> ` $ git push -f origin master ` 
-> to force a push to a repo that contains work that you <strong> don't </strong> have locally.
-> Using this command will fix this error:
+Run the command 
+` $ git push -f origin master ` 
+to force a push to a repo that contains work that you <strong> don't </strong> have locally.
+Using this command will fix this error:
 
 ```diff
 To git@github.com:roseperrone/project.git
@@ -157,6 +157,8 @@ hint: to the same ref. You may want to first merge the remote changes (e.g.,
 hint: 'git pull') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
+
+[Source](https://stackoverflow.com/questions/17291995/push-existing-project-into-github#18329034)
 
 ### How to show a log of all previous commits:
 ` $ git log `
