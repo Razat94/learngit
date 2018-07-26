@@ -120,7 +120,7 @@ Git essentially has 4 main states for the files in your local repo:
 					  If you modify it, it becomes:
 
 * <strong> modified/unstaged:  	</strong> The file has been modified but is not part of the next commit yet. 
-					  If you run the ` $ git add ` command, the file will now be </strong> staged. </strong>
+					  If you run the ` $ git add ` command, the file will now be <strong> staged. </strong>
 					  In which case, the file will be staged AND modified from the previous commit.
 
 
