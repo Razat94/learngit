@@ -279,6 +279,11 @@ In the output, notice:
 ` $ git shortlog -sn `
 
 
+### How to set up text editor: 
+` git config --global core.editor [editor] `
+> To see what default text editor is being used, use: ` $ git config core.editor ` 
+
+
 ### How to list remote branches that have been tracked locally: [Source](https://stackoverflow.com/questions/3471827/how-do-i-list-all-remote-branches-in-git-1-7)
 ` $ git branch -r `
 
