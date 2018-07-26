@@ -108,7 +108,7 @@ Git essentially has 4 main states for the files in your local repo:
 
 
 * <strong> untracked: 	</strong> Untracked files are files that Git has no record of.
-				In most cases, thess files are typically new, or have been removed from the git repo.
+				In most cases, these files are typically new, or have been removed from the git repo.
 				For example, if I have a new file, and I run ` $ git add <file> `, it  becomes:
 
 * <strong> staged:	</strong> The file is now in the staging area. 
