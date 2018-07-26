@@ -106,6 +106,7 @@ Git essentially has 4 main states for the files in your local repo:
 <div align = "center"> <img src = "images/lifecycle.png"> </div>
 [Source](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 
+
 * <strong> untracked: 	</strong> Untracked files are files that Git knows nothing about it. 
 				In most cases, thess files are typically new, or have been removed.
 				If I have a new file, and I run ` $ git add <file> `, it  becomes:
