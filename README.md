@@ -116,18 +116,16 @@ Git essentially has 4 main states for the files in your local repo:
 				It is now part of the next commit batch (called the <em>index</em>). 
 				If you git commit, it becomes:
 
-* <strong> unmodified/unchanged:</strong> The file has not changed since its last commit. If you modify it, it becomes:
+* <strong> unmodified/unchanged:</strong> The file has not changed since its last commit. 
+					  If you modify it, it becomes:
 
 * <strong> modified/unstaged:  	</strong> The file has been modified but is not part of the next commit yet. 
 					  You can stage it again with ` $ git add ` command.
 
 
-Also: You can untrack an uncommited file with git rm --cached filename and unstage a staged file with git reset HEAD <file>
+> Please note that the last three states are all considered to be tracked. 
 
-
-It is important to note that Staged files are files that are listed in the Staging Area. 
-Unstaged files are files that aren't staged yet i.e. files that are in working directory but not in the staging area.
-It is also important to note that Tracked/Untracked files is synonymous to Staged/Unstaged files.
+Also: You can untrack an uncommited file with git rm --cached filename 
 
 > In Git, the commit you are currently on is known as the HEAD commit. 
 > In many cases, the last, most recently made commit is the HEAD commit.
@@ -310,11 +308,13 @@ To continue developing, you need to get back to the "current" state of your proj
 
 
 ### How to reset the file in the WORKING DIRECTORY to the HEAD commit:
-` $ git checkout HEAD filename `
+` $ git checkout HEAD [file] `
+
+> To discard changes in working directory: ` $ git checkout -- [file] `
 
 
-### How to reset the file in the STAGING AREA to be the same as the HEAD commit.
-` $ git reset HEAD filename `
+### How to reset the file in the STAGING AREA to be the same as the HEAD commit i.e. to unstage a staged file:
+` $ git reset HEAD [file] `
 
 
 ### How to resets HEAD to a previous commit in your commit history:
@@ -330,7 +330,7 @@ you can do something like this:
 
 ```diff
 $ git commit -m 'initial commit'
-$ git add forgotten_file
+$ git add [forgotten_file]
 $ git commit --amend
 ```
 
