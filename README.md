@@ -104,7 +104,7 @@ Git essentially has 4 main states for the files in your local repo:
 [Source](https://stackoverflow.com/questions/7564841/concept-of-git-tracking-and-git-staging/15803429)
 
 <div align = "center"> <img src = "images/lifecycle.png"> </div>
-<a href = "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"> Source </a>
+<a align = "center" href = "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"> Source </a>
 
 
 * <strong> untracked: 	</strong> Untracked files are files that Git knows nothing about it. 
