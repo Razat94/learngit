@@ -1,5 +1,9 @@
 # <p align="center"> Git Cheat Sheet </p>
   <p align="center"> A personal cheat sheet that covers basic Git commands and information for reference. </p>
+  <p align="center"> 
+  The following is a compilation of all the useful commands/resources I've found while learning Git. 
+  By no means did I write any of this.
+  </p>
 
 
 ## Resources/Related Links:
@@ -95,6 +99,27 @@ The Git workflow consists of:
 > * editing files in the working directory
 > * adding files to the staging area
 > * saving/commiting changes to a Git repository. 
+
+Git essentially has 4 main states for the files in your local repo: 
+[Source](https://stackoverflow.com/questions/7564841/concept-of-git-tracking-and-git-staging/15803429)
+
+* <strong> untracked: </strong> Untracked files are files that Git knows nothing about it. 
+				In most cases, thess files are typically new, or have been removed.
+				If I have a new file, and I run ` $ git add <file> `, it  becomes:
+
+* <strong> staged:    </strong> The file is now in the staging area. 
+				Git now knows that the file exists, and the files are now being tracked. 
+				It is now part of the next commit batch (called the index). 
+				If you git commit, it becomes:
+
+* <strong> unmodified/unchanged: </strong> The file has not changed since its last commit. If you modify it, it becomes:
+* <strong> modified/unstaged:  </strong> The file has been modified but is not part of the next commit yet. You can stage it again with ` $ git add ` command.
+
+
+
+
+Also: You can untrack an uncommited file with git rm --cached filename and unstage a staged file with git reset HEAD <file>
+
 
 It is important to note that Staged files are files that are listed in the Staging Area. 
 Unstaged files are files that aren't staged yet i.e. files that are in working directory but not in the staging area.
