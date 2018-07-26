@@ -103,19 +103,21 @@ The Git workflow consists of:
 Git essentially has 4 main states for the files in your local repo: 
 [Source](https://stackoverflow.com/questions/7564841/concept-of-git-tracking-and-git-staging/15803429)
 
-* <strong> untracked: </strong> Untracked files are files that Git knows nothing about it. 
+<img src = "images/lifecycle.PNG" href = "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" >
+
+* <strong> untracked: 	</strong> Untracked files are files that Git knows nothing about it. 
 				In most cases, thess files are typically new, or have been removed.
 				If I have a new file, and I run ` $ git add <file> `, it  becomes:
 
-* <strong> staged:    </strong> The file is now in the staging area. 
+* <strong> staged:	</strong> The file is now in the staging area. 
 				Git now knows that the file exists, and the files are now being tracked. 
-				It is now part of the next commit batch (called the index). 
+				It is now part of the next commit batch (called the <em>index</em>). 
 				If you git commit, it becomes:
 
-* <strong> unmodified/unchanged: </strong> The file has not changed since its last commit. If you modify it, it becomes:
-* <strong> modified/unstaged:  </strong> The file has been modified but is not part of the next commit yet. You can stage it again with ` $ git add ` command.
+* <strong> unmodified/unchanged:</strong> The file has not changed since its last commit. If you modify it, it becomes:
 
-
+* <strong> modified/unstaged:  	</strong> The file has been modified but is not part of the next commit yet. 
+					  You can stage it again with ` $ git add ` command.
 
 
 Also: You can untrack an uncommited file with git rm --cached filename and unstage a staged file with git reset HEAD <file>
