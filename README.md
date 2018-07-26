@@ -142,6 +142,21 @@ It is also important to note that Tracked/Untracked files is synonymous to Stage
 
 ` $ git push -u origin master `
 
+> Run the command 
+> ` $ git push -f origin master ` 
+> to force a push to a repo that contains work that you <strong> don't </strong> have locally.
+> Using this command will fix this error:
+
+```diff
+To git@github.com:roseperrone/project.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:roseperrone/project.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first merge the remote changes (e.g.,
+hint: 'git pull') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
 
 ### How to show a log of all previous commits:
 ` $ git log `
@@ -230,6 +245,10 @@ In the output, notice:
 
 ### How to list total commits by author (sorted by commit count):
 ` $ git shortlog -sn `
+
+
+### How to list remote branches that have been tracked locally: [Source](https://stackoverflow.com/questions/3471827/how-do-i-list-all-remote-branches-in-git-1-7)
+` $ git branch -r `
 
 
 <br></br>
