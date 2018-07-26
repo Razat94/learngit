@@ -155,6 +155,8 @@ Also: You can untrack an uncommited file with git rm --cached filename
 ### How to inspect the contents of the working directory and staging area
 ` $ git status `
 
+> To see a short status of of files, use ` $ git status -s `
+
 
 ### How to show the difference between the working directory and the staging area
 ` $ git diff `
