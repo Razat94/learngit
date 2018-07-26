@@ -107,23 +107,24 @@ Git essentially has 4 main states for the files in your local repo:
 <div align = "center"> <a href = "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"> Source </a> </div>
 
 
-* <strong> untracked: 	</strong> Untracked files are files that Git knows nothing about it. 
-				In most cases, thess files are typically new, or have been removed.
-				If I have a new file, and I run ` $ git add <file> `, it  becomes:
+* <strong> untracked: 	</strong> Untracked files are files that Git has no record of.
+				In most cases, thess files are typically new, or have been removed from the git repo.
+				For example, if I have a new file, and I run ` $ git add <file> `, it  becomes:
 
 * <strong> staged:	</strong> The file is now in the staging area. 
 				Git now knows that the file exists, and the files are now being tracked. 
 				It is now part of the next commit batch (called the <em>index</em>). 
-				If you git commit, it becomes:
+				If you do a commit, it becomes:
 
 * <strong> unmodified/unchanged:</strong> The file has not changed since its last commit. 
 					  If you modify it, it becomes:
 
 * <strong> modified/unstaged:  	</strong> The file has been modified but is not part of the next commit yet. 
-					  You can stage it again with ` $ git add ` command.
+					  If you run the ` $ git add ` command, the file will now be </strong> staged. </strong>
+					  In which case, the file will be staged AND modified from the previous commit.
 
 
-> Please note that the last three states are all considered to be tracked. 
+> Please note that the last three states are all considered to be <strong> tracked. </strong> 
 
 Also: You can untrack an uncommited file with git rm --cached filename 
 
