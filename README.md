@@ -315,18 +315,51 @@ To continue developing, you need to get back to the "current" state of your proj
 ` $ git checkout master `
 
 
-### How to reset the file in the WORKING DIRECTORY to the HEAD commit:
+### How to reset the file in the <u>WORKING DIRECTORY</u> to the <u>HEAD</u> commit:
 ` $ git checkout HEAD [file] `
 
-> To discard changes in working directory: ` $ git checkout -- [file] `
+> To discard all changes in working directory: ` $ git checkout -- [file] `
 
 
-### How to reset the file in the STAGING AREA to be the same as the HEAD commit i.e. to unstage a staged file:
+### How to reset the file in the <u>STAGING AREA</u> to be the same as the <u>HEAD</u> commit i.e. to unstage a staged file:
 ` $ git reset HEAD [file] `
 
 
-### How to resets HEAD to a previous commit in your commit history:
-` git reset SHA `
+### How to reset <u>BOTH</u> the staging area <u>AND</u> the working directory to match the most recent commit:
+` $ git reset --hard HEAD . `
+
+
+Suppose we want to rewind history, and reset our current commit, our working directory, and our staging area
+to completely match the state of a git repository at a specified commit. Additionally, we want to <strong>save</strong> these changes. 
+This is how it'll be done:
+
+The short way is to use 
+` $ git reset --hard [commit-SHA] `
+ 
+Just like stated previously, it resets BOTH the staging area & working directory to match the specific commit. 
+However, this time it also deletes any uncommitted changes, and it also deletes any commits after [commit-SHA] simply because we're "rewinding the clocks". 
+[Hint: You can get it back though the reflog command](https://stackoverflow.com/questions/2510276/undoing-git-reset)
+
+The slightly longer way will be to use: 
+```diff
+$ git reset [commit-SHA]
+$ git checkout HEAD .
+```
+
+The first line resets the HEAD to a previous commit in your commit history, reset the staging area to match, but leave the working directory alone.
+The second line, as stated previously, resets the file in the WORKING DIRECTORY to the HEAD commit.
+
+> <strong>PLEASE NOTE: </strong> 
+Whichever way you decide to reset your files is fine, 
+but remember that any files that were created after the desired commit point will still be present in the working directory.
+In doing so, those files will be listed as untracked files.
+To bring everyhing back EXACTLY as how it was in the desired commit, you will have to remove untracked files from the working tree/directory.
+
+* To <strong> TEST </strong> what files will be removed, use ` $ git clean -n -dx`
+* To <strong> LITERALLY </strong> remove the untracked files, use ` $ git clean -f -dx  ` 
+> The `-f -dx` option forces the command to additionally remove directories and ignored files.  
+
+[Source](https://stackoverflow.com/questions/4327708/git-reset-hard-head-leaves-untracked-files-behind)
 
 
 ### How to amend (make additional changes) to the most recent commit: 
