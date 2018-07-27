@@ -326,7 +326,7 @@ To continue developing, you need to get back to the "current" state of your proj
 ### How to reset the file in the <em>STAGING AREA</em> to be the same as the <em>HEAD</em> commit i.e. to unstage a staged file:
 ` $ git reset HEAD [file] `
 
-> Remember, this command still preserves the changes locally.
+> Remember, this command still preserves the changes locally i.e. the working directory isn't affected.
 
 
 ### How to reset <em>BOTH</em> the staging area <em>AND</em> the working directory to match the most recent commit:
