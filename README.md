@@ -349,7 +349,7 @@ $ git checkout HEAD .
 The first line resets the HEAD to a previous commit in your commit history, resets the staging area to match, but leaves the working directory alone.
 The second line, as stated previously, resets the file in the WORKING DIRECTORY to the HEAD commit.
 
-####<strong>PLEASE NOTE: </strong> 
+#### PLEASE NOTE: 
 Whichever way you decide to reset your files is fine, 
 but remember that any files that were created after the desired commit point will still be present in the working directory.
 In doing so, those files will be listed as untracked files.
