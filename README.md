@@ -366,7 +366,7 @@ Here's how you do it:
 
 [Source](https://stackoverflow.com/questions/4327708/git-reset-hard-head-leaves-untracked-files-behind)
 
-<div align = "center" <img src = "images/reset.PNG"> </div>
+<div align = "center"> <img src = "images/reset.PNG"> </div>
 
 The picture above is a good representation of what happens when you run the command. 
 In which case, each circle represents a commit.
