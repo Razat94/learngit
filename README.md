@@ -1,8 +1,8 @@
 # <p align="center"> Git Cheat Sheet </p>
   <p align="center"> A personal cheat sheet that covers basic Git commands and information for reference. </p>
   <p align="center"> 
-  The following is a compilation of all the useful commands/resources I've found while learning Git. 
-  By no means did I write any of this.
+  The following is a compilation of all the useful commands/resources/information I've found while learning Git. 
+  This document was created to help better my understanding of Git. So please support the official resources provided throughout the document.
   </p>
 
 
@@ -12,7 +12,7 @@
 * [Atlassian's Tutorial on Git](https://www.atlassian.com/git/tutorials)
 * [Interesting blog post that explains Git/Github in plain english](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english)
 * [Interesting blog post on how to write a git commit message](https://chris.beams.io/posts/git-commit/)
-* [Similar Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+* [Similar Git Cheatsheet](cheatsheets/github-git-cheat-sheet.pdf)
 * [Another Git Cheatsheet](https://orga.cat/posts/most-useful-git-commands)
 > The directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation for all of the popular commands.
 
@@ -265,10 +265,12 @@ In the output, notice:
 
 ### To remove a file in Git:
 ` $ git rm [file] ` 
-> Remember: use this command to remove files from both the staging area and the working directory.
+> Remember: use this command to remove files from both the staging area and the working directory. It also stages the deletion for you.
+
+> Use ` git rm --cached [file] ` to remove the file from version control but the command preserves the file locally.
 
 > In order to remove a file with this command, it must first be under git version control. 
-> Files that have not been added yet (Untracked files) or are ignored (using .gitignore or .git/info/exclude files) will nnot be added.
+> Files that have not been added yet (Untracked files) or are ignored (using .gitignore or .git/info/exclude files) will not be added.
 
 
 ### To rename a file in Git:
@@ -324,6 +326,8 @@ To continue developing, you need to get back to the "current" state of your proj
 ### How to reset the file in the <em>STAGING AREA</em> to be the same as the <em>HEAD</em> commit i.e. to unstage a staged file:
 ` $ git reset HEAD [file] `
 
+> Remember, this command still preserves the changes locally.
+
 
 ### How to reset <em>BOTH</em> the staging area <em>AND</em> the working directory to match the most recent commit:
 ` $ git reset --hard HEAD . `
@@ -362,6 +366,9 @@ Here's how you do it:
 
 [Source](https://stackoverflow.com/questions/4327708/git-reset-hard-head-leaves-untracked-files-behind)
 
+<img src = "images/reset.PNG">
+
+The 
 
 ### How to amend (make additional changes) to the most recent commit: 
 ` $ git commit --amend `
