@@ -372,12 +372,12 @@ The picture above is a good representation of what happens when you run the comm
 In which case, each circle represents a commit.
 
 Before reset:
-	* HEAD is at the most recent commit
+* HEAD is at the most recent commit
 
 After resetting:
-	* HEAD goes to a previously made commit of your choice
-	* The gray commits are no longer part of your project
-	* You have in essence rewound the project's history
+* HEAD goes to a previously made commit of your choice
+* The gray commits are no longer part of your project
+* You have in essence rewound the project's history
 
 ### How to amend (make additional changes) to the most recent commit: 
 ` $ git commit --amend `
