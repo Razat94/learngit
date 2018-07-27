@@ -13,7 +13,8 @@
 * [Interesting blog post that explains Git/Github in plain english](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english)
 * [Interesting blog post on how to write a git commit message](https://chris.beams.io/posts/git-commit/)
 * [Similar Git Cheatsheet](cheatsheets/github-git-cheat-sheet.pdf)
-* [Another Git Cheatsheet](https://orga.cat/posts/most-useful-git-commands)
+* [Another Git Cheatsheet](cheatsheets/atlassian-git-cheatsheet.pdf)
+* [Last Git Cheatsheet](https://orga.cat/posts/most-useful-git-commands)
 > The directory *C:\Program Files\Git\mingw64\share\doc\git-doc* holds interesting documentation for all of the popular commands.
 
 
@@ -100,12 +101,11 @@ The Git workflow consists of:
 > * adding files to the staging area
 > * saving/commiting changes to a Git repository. 
 
-Git essentially has 4 main states for the files in your local repo: 
-[Source](https://stackoverflow.com/questions/7564841/concept-of-git-tracking-and-git-staging/15803429)
-
 <div align = "center"> <img src = "images/lifecycle.png"> </div>
 <div align = "center"> <a href = "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"> Source </a> </div>
 
+Git essentially has 4 main states for the files in your local repo: 
+[Source](https://stackoverflow.com/questions/7564841/concept-of-git-tracking-and-git-staging/15803429)
 
 * <strong> untracked: 	</strong> Untracked files are files that Git has no record of.
 				In most cases, these files are typically new, or have been removed from the git repo.
@@ -366,9 +366,18 @@ Here's how you do it:
 
 [Source](https://stackoverflow.com/questions/4327708/git-reset-hard-head-leaves-untracked-files-behind)
 
-<img src = "images/reset.PNG">
+<div align = "center" <img src = "images/reset.PNG"> </div>
 
-The 
+The picture above is a good representation of what happens when you run the command. 
+In which case, each circle represents a commit.
+
+Before reset:
+	* HEAD is at the most recent commit
+
+After resetting:
+	* HEAD goes to a previously made commit of your choice
+	* The gray commits are no longer part of your project
+	* You have in essence rewound the project's history
 
 ### How to amend (make additional changes) to the most recent commit: 
 ` $ git commit --amend `
