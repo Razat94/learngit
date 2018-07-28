@@ -22,6 +22,7 @@
 1. [Configuration](#config)
 2. [Basic Git commands](#basicGit)
 3. [Undoing Changes](#undo)
+4. [Git Branching](#branching)
 
 
 <br></br>
@@ -396,3 +397,44 @@ By doing this, you will only end up with one commit, where the new changes will 
 
 > To just change the message of the last commit: 
 > ` $ git commit --amend -m "New commit message" `
+
+
+<br></br>
+## <p align="center" id = "branching"> Git Branching | [Back to ToC](#toc) </p>
+
+Git branching allows users to experiment with different versions of a project by checking out separate branches to work on.
+
+### To list all branches in a Git project:
+` $ git branch `
+> In the output, the * (asterisk) is showing you what branch you’re on. 
+
+
+### To create a new branch and give it a name:
+` $ git branch [branch_name] `
+
+
+### To switch from one branch to another. 
+` $ git checkout [branch_name] `
+
+ 
+### To simultaneously create and check out a <new-branch>:
+` $ git checkout -b [new-branch] `
+
+> The `-b` option is a convenience flag that tells Git to run ` $ git branch [new-branch] ` before running ` $ git checkout [new-branch] `
+
+
+### To deletes a specified branch:
+` $ git branch -d [branch_name] `
+> NOTE: Git prevents you from deleting the branch if the branch has unmerged changes.
+
+
+### To force delete the specified branch, even if it has unmerged changes: 
+` $ git branch -D [branch] `
+
+
+### To rename a branch:
+` $ git branch -m [branch] `
+
+
+### To join (merge) file changes from one branch to another:
+` $ git merge branch_name ` 
