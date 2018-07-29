@@ -150,7 +150,7 @@ Also: You can untrack an uncommited file with git rm --cached filename
 ```
 
 
-### How to adds all of the files from the working directory to the staging area
+### How to add all of the files from the working directory to the staging area
 ` $ git add . `
 
 
@@ -168,11 +168,15 @@ Also: You can untrack an uncommited file with git rm --cached filename
 ` $ git commit -m "message" `
 
 
+### How to add files and make a commit in one command:
+` $ git commit -a -m "message" `
+
 ### …or push an existing Git repository from the command line to a Github repo
 > Run this command initially if you're pushing to a new Github repo:
 > <br> ` $ git remote add origin [Github Repo URL].git `
 
 ` $ git push -u origin master `
+> The `-u` option is only needed if the remote branch doesn't yet exist
 
 Run the command 
 ` $ git push -f origin master ` 
@@ -437,6 +441,10 @@ Git branching allows users to experiment with different versions of a project by
 ` $ git branch -m [branch] `
 
 
+### To show you your local copies of remote branches:
+` $ git branch --all `
+
+
 ### To join (merge) file changes from one branch to another:
 ` $ git merge branch_name ` 
 
@@ -447,6 +455,8 @@ Git branching allows users to experiment with different versions of a project by
 
 ### To create a local copy of a remote directory:
 ` $ git clone `
+
+> Add `--recursive` option if the remote has submodules.
 
 
 ### To list remote directories:
