@@ -23,6 +23,7 @@
 2. [Basic Git commands](#basicGit)
 3. [Undoing Changes](#undo)
 4. [Git Branching](#branching)
+5. [Remote Directories](#remote)
 
 
 <br></br>
@@ -438,3 +439,31 @@ Git branching allows users to experiment with different versions of a project by
 
 ### To join (merge) file changes from one branch to another:
 ` $ git merge branch_name ` 
+
+
+<br></br>
+## <p align="center" id = "remote"> Remote Directories | [Back to ToC](#toc) </p>
+
+
+### To create a local copy of a remote directory:
+` $ git clone `
+
+
+### To list remote directories:
+` $ git remote -v `
+
+
+### To fetch work from the remote directory and place it into the local copy:
+` git fetch `
+
+
+### To merge origin/master directory into your local branch:
+` $ git merge origin/master `
+
+
+### To pushes a local branch to the origin remote:
+` $ git push origin <branch_name> `
+
+
+### To remove a remote directory:
+` $ git remote rm [remote name] ` [Source](https://help.github.com/articles/removing-a-remote/)
