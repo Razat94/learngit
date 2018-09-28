@@ -171,7 +171,7 @@ Also: You can untrack an uncommited file with git rm --cached filename
 ### How to add files and make a commit in one command:
 ` $ git commit -a -m "message" `
 
-### …or push an existing Git repository from the command line to a Github repo
+### â€¦or push an existing Git repository from the command line to a Github repo
 > Run this command initially if you're pushing to a new Github repo:
 > <br> ` $ git remote add origin [Github Repo URL].git `
 
@@ -301,7 +301,7 @@ In the output, notice:
 
 
 ### Viewing an old commit | [Source](https://www.atlassian.com/git/tutorials/undoing-changes)
-Let’s say your project history looks something like the following:
+Letâ€™s say your project history looks something like the following:
 
 ```diff
 $ git log --oneline
@@ -411,7 +411,7 @@ Git branching allows users to experiment with different versions of a project by
 
 ### To list all branches in a Git project:
 ` $ git branch `
-> In the output, the * (asterisk) is showing you what branch you’re on. 
+> In the output, the * (asterisk) is showing you what branch youâ€™re on. 
 
 
 ### To create a new branch and give it a name:
@@ -474,6 +474,8 @@ Git branching allows users to experiment with different versions of a project by
 ### To pushes a local branch to the origin remote:
 ` $ git push origin <branch_name> `
 
+### To add a remote directory:
+` $ git remote add origin [remote_name] `
 
 ### To remove a remote directory:
 ` $ git remote rm [remote name] ` [Source](https://help.github.com/articles/removing-a-remote/)
